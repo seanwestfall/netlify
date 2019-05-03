@@ -1,0 +1,1301 @@
+/*
+Theme Name: Them - Minimal and Creative Portfolio HTML Template
+Author: Htmlbeans
+Author URI: 
+Version: 1.0
+Text Domain: Them - Minimal and Creative Portfolio
+Tags: one-column, two-columns
+Theme URI:
+*/
+
+/*------------------------------------------------------------------
+
+1. import files
+2. Global style classes
+3. main wrapper styles / #wrapper
+4. main styles / #main
+5. page header styles / #header
+6. page logo styles / .logo
+7. page navigation styles / #nav
+8. page sidebar styles / .side-bar
+9. page main banner styles / .main-banner
+10. page item styles / .item
+11. page isotop filter styles / .isotop-filter
+12. page portfolio box styles / .portfolio-box
+13. page isotop box styles / .isotop-box
+14. page social styles / .social
+15. page footer styles / #footer
+16. page fullscreen slider styles / .fullscreen-slider
+17. page fullscreen slider 2 styles / .fullscreen-slider2
+18. page main slider styles / .main-slider
+19. page port view styles / .port-view
+20. page portfolio detail styles / .portfolio-detail
+21. page footer detail styles / .footer-detail
+22. page page header styles / .page-header
+23. page post styles / .post
+24. page post more styles / .post-more
+25. page contact section styles / .contact-section
+26. page contact form styles / .contact-form
+27	. page team styles / .team
+28. page widget styles / .widget
+
+-------------------------------------------------------------------*/
+
+// devices viewport width starts at:
+$breakpoints: (
+	xs-phone: 320px,
+	phone: 480px,
+	tablet: 768px,
+	desktop: 1024px,
+	widescreen: 1300px
+);
+ 
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+/*------------------------------------------------------------------
+	1. import files
+-------------------------------------------------------------------*/
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+
+@import "bootstrap-custom";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+
+@import 'base/mixins';
+@import 'base/helpers';
+@import "base/wp-reset";
+
+
+/*------------------------------------------------------------------
+	2. Global style classes
+-------------------------------------------------------------------*/
+.bg-grey{background-color: $color1;}
+.bg-grey2{background-color: $color6;}
+.bg-white{background-color: $white;}
+.bg-img-full{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.bg-img-parallax{background-attachment: fixed;}
+.overlay{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.75;
+	position: absolute;
+	pointer-events: none;
+	background-color: $black;
+}
+.section{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.mar-top-xs{margin-top: 30px;}
+.mar-top-sm{margin-top: 60px;}
+.mar-top-md{margin-top: 90px;}
+.pad-top-xs{padding-top: 30px;}
+.pad-top-sm{padding-top: 60px;}
+.pad-top-md{padding-top: 90px;}
+.mar-top-lg{margin-top: 185px;}
+.pad-top-lg{padding-top: 185px;}
+.pad-top-xs2{padding-top: 12px;}
+.margin-zero{margin: 0 !important;}
+.mar-bottom-xs{margin-bottom: 30px;}
+.mar-bottom-sm{margin-bottom: 60px;}
+.mar-bottom-md{margin-bottom: 90px;}
+.pad-bottom-sm{padding-bottom: 60px;}
+.pad-bottom-xs{padding-bottom: 30px;}
+.pad-bottom-md{padding-bottom: 90px;}
+.mar-bottom-lg{margin-bottom: 185px;}
+.pad-bottom-lg{padding-bottom: 185px;}
+.visible-xs{display: none !important;}
+body{
+	font-weight: 300;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+.img-responsive2{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+a{outline: 0 !important;}
+/*------------------------------------------------------------------
+	3. main wrapper styles / #wrapper
+-------------------------------------------------------------------*/
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+/*------------------------------------------------------------------
+	4. main styles / #main
+-------------------------------------------------------------------*/
+#main{
+	overflow: hidden;
+	position: relative;
+}
+.w1{
+	position: relative;
+	transition: all ease 0.3s;
+}
+.nav-active{
+	.side-bar.side-push{margin-right: 0;}
+	.w1{
+		margin-right: 350px;
+		margin-left: -350px;
+	}
+	.w1.add{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#header.sticky .holder{
+		margin-right: 350px;
+		margin-left: -350px;
+	}
+	#header .logo{opacity: 0;}
+	.side-bar.style-full{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.nav-active2{
+	.menu-opener2{opacity: 0;}
+	#header #nav.style2{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+	}
+}
+/*------------------------------------------------------------------
+	5. page header styles / #header
+-------------------------------------------------------------------*/
+#header{
+	z-index: 2;
+	position: relative;
+	.holder{
+		padding: 41px 0;
+		transition: all ease 0.3s;
+	}
+	// page navigation
+	#nav{
+		float: right;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 32px;
+		&.style2{
+			opacity: 0;
+			visibility: hidden;
+			transition: all ease 0.3s;
+			transform: translateX(150px);
+		}
+		li{
+			margin: 0;
+			padding: 6px 18px;
+			position: relative;
+			vertical-align: top;
+			&:hover .drop{;
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+			&:hover >a{color: $color4;}
+		}
+		a{
+			display: block;
+			&:hover{color: $color4;}
+		}
+		.drop{
+			left: 0;
+			top: 100%;
+			opacity: 0;
+			width: 160px;
+			padding: 10px 0;
+			position: absolute;
+			visibility: hidden;
+			background: $color2;
+			transition: all ease 0.3s;
+			transform: translateY(50px);
+			&.add{width: 210px;}
+			li{padding: 0;}
+			a{
+				color: $white;
+				display: block;
+				padding: 0 20px;
+				transition: all ease 0.3s;
+				&:hover{color: $color4;}
+			}
+		}
+	}
+	&.nospace .holder{
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+	}
+	&.sticky .holder{
+		padding: 20px 0;
+		position: fixed;
+		background: $color1;
+		box-shadow: 0 0 20px rgba(0,0,0,0.2)
+	}
+}
+/*------------------------------------------------------------------
+	6. page logo styles / .logo
+-------------------------------------------------------------------*/
+.logo{
+	color: $color2;
+	transition: all ease 0.4s;
+	font: 700 36px/40px $heading-font-family;
+	a{
+		color: $color2;
+		transition: all ease 0.4s;
+	}
+}
+.menu-opener2,
+.menu-opener{
+	color: $color2;
+	font-size: 16px;
+	line-height: 40px;
+	@extend %transition;
+}
+/*------------------------------------------------------------------
+	7. page navigation styles / #nav
+-------------------------------------------------------------------*/
+#nav {
+	font-weight: 500;
+	ul{margin: 0;}
+	li{margin: 0 0 8px;}
+	.drop{
+		margin: 0 0 11px;
+		font-weight: 300;
+		padding-left: 5.7%;
+		li{margin: 0;}
+		a{color: $color7;}
+	}
+	a{
+		color: $color3;
+		transition: all ease 0.3s;
+	}
+}
+/*------------------------------------------------------------------
+	8. page sidebar styles / .side-bar
+-------------------------------------------------------------------*/
+.side-bar{
+	z-index: 2;
+	float: left;
+	width: 18.3%;
+	height: 100vh;
+	min-width: 260px;
+	overflow-y: auto;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	&:after{
+		top: 0;
+		left: 0;
+		right: 0;
+		content: "";
+		height: 110px;
+		background: $white;
+		position: absolute;
+	}
+	&:before{
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		content: "";
+		height: 150px;
+		background: $white;
+		position: absolute;
+	}
+	.logo{
+		top: 65px;
+		left: 14%;
+		z-index: 2;
+		position: absolute;
+		background: $white;
+	}
+	// navigation
+	#nav{
+		width: 100%;
+		height: 100vh;
+		display: table;
+		overflow-y: auto;
+		vertical-align: middle;
+		> ul{
+			display: table-cell;
+			vertical-align: middle;
+			padding: 40px 5% 80px 13.5%;
+		}
+		.drop-link{
+			position: relative;
+			vertical-align: top;
+			display: inline-block;
+			&:after{
+				width: 6px;
+				height: 6px;
+				content: " ";
+				margin: -1px 0 0 10px;
+				display: inline-block;
+				vertical-align: middle;
+				border: solid $color3;
+				border-width: 1px 1px 0 0;
+				transition: all ease 0.3s;
+				transform: rotate(45deg);
+			}
+			&.active:after{
+				margin: -5px 0 0 10px;
+				transform: rotate(135deg);
+			}
+		}
+		.drop{display: none;}
+	}
+	.footer{
+		right: 0;
+		padding: 0;
+		z-index: 2;
+		left: 13.9%;
+		bottom: 55px;
+		color: $color7;
+		position: absolute;
+		p{
+			font-size: 12px;
+			letter-spacing: 0.6px;
+		}
+	}
+	.social{
+		padding: 0 0 19px;
+		li{padding: 0 5.6% 0 0;}
+	}
+	.close{
+		top: 40px;
+		left: 50%;
+		z-index: 3;
+		color: $color7;
+		position: fixed;
+		transition: all 0.3s ease 0.3s;
+		transform: translateX(-50%);
+		&:hover{color: $color4;}
+	}
+	&.side-push{
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 350px;
+		position: fixed;
+		margin-right: -350px;
+		transition: all ease 0.3s;
+	}
+	&.style-full{
+		left: 0;
+		right: 0;
+		opacity: 0;
+		width: 100%;
+		font-size: 24px;
+		position: fixed;
+		line-height: 36px;
+		visibility: hidden;
+		transition: all ease 0.3s;
+		&:after,
+		&:before{display: none;}
+		#nav{
+			a{
+				color: $color2;
+				&:hover{color: $color4;}
+			}
+			.drop{
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+				line-height: 32px;
+				a{
+					color: $color3;
+					&:hover{color: $color4;}
+				}
+			}
+			> ul{padding: 20px;}
+		}
+	}
+}
+/*------------------------------------------------------------------
+	9. page main banner styles / .main-banner
+-------------------------------------------------------------------*/
+.main-banner{
+	font-size: 18px;
+	line-height: 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	.heading{
+		color: $color2;
+		margin: 0 0 46px;
+		font: 700 64px/70px $heading-font-family;
+	}
+	p{
+		margin: 0;
+		max-width: 760px;
+	}
+	.bg{
+		max-width: 700px;
+		margin-left: 30px;
+		padding: 50px 50px;
+		vertical-align: top;
+		display: inline-block;
+		background: rgba(255,255,255,0.7);
+	}
+	&.full .caption{
+		height: 100vh;
+		@include v-align();
+	}
+	&.center p{margin: 0 auto;}
+}
+.grid-sizer{width: 33.33%;}
+/*------------------------------------------------------------------
+	10. page item styles / .item
+-------------------------------------------------------------------*/
+.item{
+	float: left;
+	&.col2{width: 50%;}
+	&.col4{width: 25%;}
+	&.col3{width: 33.3%;}
+	&.col5{width: 16.66%;}
+	&.col2half{width: 66.66%;}
+	.portfolio-box{margin: 0 12px 24px;}
+	&.add .portfolio-box{margin: 0 24px 24px;}
+	&.add2 .portfolio-box{margin: 0;}
+}
+/*------------------------------------------------------------------
+	11. page isotop filter styles / .isotop-filter
+-------------------------------------------------------------------*/
+.top-nav,
+.isotop-filter{
+	margin-left: 0;
+	li{padding: 0 1.2%;}
+	.active a{color: $color4;}
+	a{
+		color: $color2;
+		@extend %transition;
+		&:hover{color: $color4;}
+	}
+}
+/*------------------------------------------------------------------
+	12. page portfolio box styles / .portfolio-box
+-------------------------------------------------------------------*/
+.portfolio-box{
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	&.active .over,
+	&:hover .over{
+		opacity: 1;
+		visibility: visible;
+		.fa,
+		.txt,
+		.heading{
+			opacity: 1;
+			transform: translateY(0);
+			transition: all ease 0.3s;
+		}
+	}
+	&.top-left{
+		text-align: left;
+		.over .holder .frame{vertical-align: top;}
+	}
+	&.top-right{
+		text-align: right;
+		.over .holder .frame{vertical-align: top;}
+	}
+	&.bottom-left{
+		text-align: left;
+		.over .holder .frame{vertical-align: bottom;}
+	}
+	&.bottom-right{
+		text-align: right;
+		.over .holder .frame{vertical-align: bottom;}
+	}
+	.over{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		background: $white;
+		transition: all ease 0.2s;
+		.holder{
+			width: 100%;
+			height: 100%;
+			display: table;
+			.frame{
+				width: 100%;
+				padding: 20px 30px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+	.heading{
+		opacity: 0;
+		color: $color2;
+		margin: 0 0 10px;
+		transform: translateY(-40px);
+		transition: all 0.2s ease 0.3s;
+		font: 700 24px/30px $heading-font-family;
+		a{
+			color: $color2;
+			transition: all ease 0.3s;
+			&:hover{color: $color4;}
+		}
+	}
+	.txt{
+		opacity: 0;
+		display: block;
+		color: $color4;
+		transform: translateY(40px);
+		transition: all 0.3s ease 0.3s;
+		a{
+			color: $color4;
+			transition: all ease 0.3s;
+			&:hover{color: $color2;}
+		}
+	}
+	.fa{
+		opacity: 0;
+		width: 50px;
+		margin: 0 5px;
+		color: $color4;
+		font-size: 20px;
+		line-height: 50px;
+		border-radius: 50%;
+		border: 1px solid $color4;
+		transform: translateY(-40px);
+		transition: all 0.2s ease 0.3s;
+		+ .fa{transform: translateY(40px);}
+		&:hover{
+			color: $color2;
+			border-color: $color2;
+		}
+	}
+	.img-full{
+		height: 100vh;
+		@include v-align();
+	}
+	&.large{
+		box-shadow: 0 0 2px rgba(0,0,0,0.1);
+		.heading{
+			font-size: 36px;
+			line-height: 48px;
+		}
+	}
+	&.style2{
+		.img-full{height: 79vh;}
+		.over{
+			top: auto;
+			left: auto;
+			opacity: 1;
+			right: auto;
+			height: 21vh;
+			bottom: auto;
+			position: relative;
+			visibility: visible;
+			background: $color6;
+			.frame{
+				padding: 0;
+				position: relative;
+			}
+			.holder{
+				margin: 0 auto;
+				max-width: 506px;
+				position: relative;
+			}
+			.txt,
+			.heading{
+				opacity: 1;
+				visibility: visible;
+				transform: translate(0);
+			}
+		}
+	}
+	&.style3{
+		box-shadow: none;
+		img{box-shadow: 0 0 2px rgba(0,0,0,0.1);}
+		.over{
+			position: static;
+			background: transparent;
+			.holder{
+				width: auto;
+				height: auto;
+				display: block;
+				.frame{
+					padding: 7%;
+					width: auto;
+					padding: auto;
+					display: block;
+				}
+			}
+		}
+	}
+	&.style4{
+		.img-full{height: 79vh;}
+		.over{
+			opacity: 1;
+			display: block;
+			padding: 30px 0;
+			position: static;
+			background: $color6;
+			visibility: visible;
+			.frame{
+				padding: 0;
+				position: relative;
+			}
+			.holder{
+				margin: 0 auto;
+				max-width: 506px;
+				position: relative;
+			}
+			.txt,
+			.heading{
+				opacity: 1;
+				visibility: visible;
+				transform: translate(0);
+			}
+		}
+	}
+}
+/*------------------------------------------------------------------
+	13. page isotop box styles / .isotop-box
+-------------------------------------------------------------------*/
+.isotop-box{
+	overflow: hidden;
+	margin-bottom: 38px;
+}
+#isotop-holder2,
+#isotop-holder{margin-bottom: 38px;}
+.load-holder{margin-bottom: 176px;}
+.load-more{
+	color: $color5;
+	line-height: 1;
+	font-size: 24px;
+	@extend %transition;
+	&:hover{color: $color4;}
+}
+/*------------------------------------------------------------------
+	14. page social styles / .social
+-------------------------------------------------------------------*/
+.social{
+	margin: 0;
+	padding: 18px 0 21px;
+	li{padding: 0 10px;}
+	a{
+		color: $color7;
+		@extend %transition;
+		&:hover{
+			color: $color2;
+		}
+	}
+}
+/*------------------------------------------------------------------
+	15. page footer styles / #footer
+-------------------------------------------------------------------*/
+#footer{
+	color: $color7;
+	padding: 41px 0;
+	p{font-size: 12px;}
+}
+/*------------------------------------------------------------------
+	16. page fullscreen slider styles / .fullscreen-slider
+-------------------------------------------------------------------*/
+.fullscreen-slider{
+	padding-right: 48px;
+	.slick-arrow{
+		top: 50%;
+		border: 0;
+		padding: 0;
+		z-index: 2;
+		right: 17px;
+		width: 15px;
+		font-size: 0;
+		height: 15px;
+		line-height: 0;
+		margin: 17px 0 0;
+		position: absolute;
+		background: transparent;
+		transition: all ease 0.3s;
+		border: solid $color7;
+		border-width: 5px 5px 0 0;
+		transform: translateY(-50%) rotate(135deg);
+		&:hover{color: $color6;}
+	}
+	.slick-prev{
+		margin: -17px 0 0;
+		transform: translateY(-50%) rotate(-45deg);
+	}
+}
+/*------------------------------------------------------------------
+	17. page fullscreen slider 2 styles / .fullscreen-slider2
+-------------------------------------------------------------------*/
+.fullscreen-slider2{
+	.arrow{
+		top: 37%;
+		margin: 0;
+		border: 0;
+		padding: 0;
+		color: $color7;
+		font-size: 24px;
+		position: absolute;
+		background: transparent;
+		transition: all .4s ease;
+		&:hover{color: $color4;}
+	}
+	.prev_them{left: -25px;}
+	.next_them{right: -25px;}
+}
+/*------------------------------------------------------------------
+	18. page main slider styles / .main-slider
+-------------------------------------------------------------------*/
+.main-slider{
+	padding-right: 30px;
+	.slick-dots{
+		top: 50%;
+		margin: 0;
+		padding: 0;
+		right: 15px;
+		list-style: none;
+		position: absolute;
+		transform: translateY(-50%);
+		li{
+			height: 25px;
+			list-style: none;
+			&.slick-active button{background: $color2;}
+		}
+	}
+	button{
+		margin: 0;
+		border: 0;
+		padding: 0;
+		width: 15px;
+		height: 15px;
+		overflow: hidden;
+		border-radius: 50%;
+		text-indent: -9999px;
+		background: transparent;
+		transition: all .4s ease;
+		border: 2px solid $color2;
+	}
+}
+/*------------------------------------------------------------------
+	19. page port view styles / .port-view
+-------------------------------------------------------------------*/
+.port-view{
+	padding: 0 12px;
+	overflow: hidden;
+	.column{
+		width: 17%;
+		float: left;
+		padding: 114px 12px;
+		transition: all ease 0.5s;
+		&:hover,
+		&.active{
+			width: 32%;
+			padding: 6px 12px;
+		}
+		&.active .txt,
+		&.active .over,
+		&.active .heading{
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+}
+/*------------------------------------------------------------------
+	20. page portfolio detail styles / .portfolio-detail
+-------------------------------------------------------------------*/
+.portfolio-detail{
+	font-size: 18px;
+	line-height: 32px;
+	.heading{
+		color: $color2;
+		margin: 0 0 60px;
+		font: 700 64px/88px $heading-font-family;
+	}
+	p{margin: 0 0 54px;}
+	dl{
+		color: $color5;
+		margin: 0 0 49px;
+		padding: 0 0 0 4.4%;
+		font: 700 18px/32px $heading-font-family;
+		dd,
+		dt{
+			font-weight: normal;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		dd{padding: 0 4.7% 0 0;}
+	}
+	.text-box{
+		padding: 173px 0 42px;
+	}
+	.social{
+		font-size: 22px;
+		a{color: $color3;}
+	}
+}
+/*------------------------------------------------------------------
+	21. page footer detail styles / .footer-detail
+-------------------------------------------------------------------*/
+.footer-detail{
+	padding: 122px 0 185px;
+	font: italic 18px/32px $heading-font-family;
+	a{
+		color: $color7;
+		transition: all ease 0.4s;
+		&:hover{color: $color2;}
+	}
+	.fa{
+		margin: 0 33px;
+		font-size: 24px;
+		vertical-align: middle;
+	}
+	.social{
+		font-size: 22px;
+		margin: 0 0 16px;
+		a{color: $color3;}
+		.fa{
+			margin: 0;
+			font-size: 22px;
+		}
+	}
+	&.border{border-top: 1px solid #ececec;}
+	&.add{
+		padding: 51px 0 185px;
+	}
+}
+/*------------------------------------------------------------------
+	22. page page header styles / .page-header
+-------------------------------------------------------------------*/
+.page-header{
+	margin: 0;
+	border: 0;
+	padding: 248px 0 188px;
+	.heading{
+		margin: 0;
+		color: $color2;
+		font: 700 64px/88px $heading-font-family;
+	}
+	&.add{padding: 171px 0 163px;}
+}
+/*------------------------------------------------------------------
+	23. page post styles / .post
+-------------------------------------------------------------------*/
+.post{
+	font-size: 18px;
+	margin: 0 0 63px;
+	line-height: 32px;
+	.img{box-shadow: 0 0 3px rgba(0,0,0,0.1);}
+	.text{padding: 40px 10.2% 0;}
+	.heading{
+		color: $color2;
+		margin: 0 0 30px;
+		font: 700 36px/48px $heading-font-family;
+		a{
+			color: $color2;
+			transition: all ease 0.4s;
+			&:hover{color: $color4;}
+		}
+	}
+	.list{
+		color: $color4;
+		font-size: 16px;
+		a{
+			color: $color4;
+			transition: all ease 0.4s;
+			&:hover{color: $color2;}
+		}
+		.fa{padding: 0 6px 0 0;}
+		li{padding: 0 13px 0 6px;}
+	}
+	p{margin: 0 0 35px;}
+	blockquote{
+		border: 0;
+		color: $color2;
+		margin: 0 0 58px;
+		line-height: 32px;
+		padding: 10px 6% 0;
+		font-style: italic;
+		font-family: $heading-font-family;
+	}
+	.tags{
+		display: block;
+		color: $color5;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 36px;
+		font-style: italic;
+		font-family: $heading-font-family;
+		a{
+			color: $color5;
+			transition: all ease 0.4s;
+			&:hover{color: $color2;}
+		}
+	}
+	&.detail{
+		.heading{
+			font-size: 64px;
+			margin: 0 0 20px;
+			line-height: 88px;
+		}
+		.text{padding: 170px 0 0;}
+		.list{margin: 0 0 56px;}
+		p{margin: 0 0 50px;}
+	}
+	&.style2{
+		.heading{
+			margin: 0 0 44px;
+		}
+	}
+}
+/*------------------------------------------------------------------
+	24. page post more styles / .post-more
+-------------------------------------------------------------------*/
+.post-more{
+	padding: 13px;
+	color: $color2;
+	display: block;
+	font-size: 24px;
+	margin: 0 0 6px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+/*------------------------------------------------------------------
+	25. page contact section styles / .contact-section
+-------------------------------------------------------------------*/
+.contact-section{
+	padding-bottom: 43px;
+	.title{
+		display: block;
+		color: $color2;
+		margin: 0 0 15px;
+		font: 700 24px/36px $heading-font-family;
+		a{
+			color: $color2;
+			transition: all ease 0.4s;
+			&:hover{color: $color4;}
+		}
+	}
+	address{
+		font-size: 18px;
+		margin: 0 0 58px;
+		line-height: 32px;
+	}
+	.phone{
+		display: block;
+		font-size: 18px;
+		margin: 0 0 54px;
+		max-width: 250px;
+		line-height: 31px;
+		a{
+			color: $color3;
+			vertical-align: top;
+			display: inline-block;
+		}
+	}
+	.email{
+		display: block;
+		font-size: 18px;
+		margin: 0 0 54px;
+		max-width: 250px;
+		line-height: 31px;
+		a{
+			color: $color3;
+			vertical-align: top;
+			display: inline-block;
+		}
+	}
+}
+/*------------------------------------------------------------------
+	26. page contact form styles / .contact-form
+-------------------------------------------------------------------*/
+.contact-form{
+	overflow: hidden;
+	padding: 4px 0 0;
+	.form-control{
+		margin: 0;
+		height: 48px;
+		color: $color5;
+		font-size: 16px;
+		overflow: hidden;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 8px 23px;
+		line-height: 32px;
+		border-color: $color5;
+	}
+	.form-group{
+		margin: 0 0 32px;
+		&.has-error .form-control{
+			color: red;
+			border-color: red;
+		}
+	}
+	textarea.form-control{
+		resize: none;
+		height: 192px;
+		overflow: auto;
+	}
+	.btn{
+		border: 0;
+		color: $white;
+		font-size: 12px;
+		border-radius: 0;
+		padding: 10px 38px;
+		background: $color2;
+		border: 1px solid $color2;
+		text-transform: uppercase;
+		transition: all ease 0.3s;
+		&:hover{
+			color: $color2;
+			border-color: $color2;
+			background: transparent;
+		}
+	}
+}
+.map{@include size(100%, 600px);}
+.num-counter{
+	display: block;
+	margin: 0 0 10px;
+	font: 700 48px/46px $heading-font-family;
+}
+.counter-text{
+	display: block;
+	font-size: 18px;
+	margin: 0 0 10px;
+	line-height: 32px;
+}
+.team-section{
+	margin: 0 -12px;
+	overflow: hidden;
+	.col3{
+		float: left;
+		width: 33.33%;
+		padding: 0 12px;
+	}
+}
+/*------------------------------------------------------------------
+	27. page team styles / .team
+-------------------------------------------------------------------*/
+.team{
+	position: relative;
+	&:hover .over{
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+	.over{
+		top: 0;
+		bottom: 0;
+		left: 12px;
+		opacity: 0;
+		right: 12px;
+		background: $white;
+		position: absolute;
+		visibility: hidden;
+		transform: scale(0.5);
+		transition: all ease 0.3s;
+		box-shadow: 0 0 20px rgba(0,0,0,0.2)
+	}
+	.holder{
+		width: 100%;
+		height: 100%;
+		display: table;
+		vertical-align: middle;
+	}
+	.frame{
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.subtitle{
+		display: block;
+		margin: 0 0 4px;
+		font: 700 24px/36px $heading-font-family;
+	}
+	.title{
+		display: block;
+		color: $color4;
+		font-size: 16px;
+		margin: 0 0 34px;
+		line-height: 32px;
+		text-transform: uppercase;
+	}
+	.social{
+		padding: 0;
+		font-size: 21px;
+	}
+}
+/*------------------------------------------------------------------
+	28. page widget styles / .widget
+-------------------------------------------------------------------*/
+.widget{
+	margin: 0 0 50px;
+	background: $white;
+	padding: 12px 25px 1px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	.heading{
+		color: $color3;
+		margin: 0 0 22px;
+		padding: 0 0 16px;
+		border-bottom: 1px dotted #f2f2f2;
+		font: 700 20px/36px $heading-font-family;
+	}
+	&.recent-widget ul{
+		margin: 0;
+		padding: 0;
+		li{
+			overflow: hidden;
+			margin: 0 0 16px;
+		}
+		.img{
+			float: left;
+			max-width: 64px;
+			margin-right: 8%;
+		}
+		.holder{overflow-x: hidden;}
+		.text{
+			display: block;
+			color: $color3;
+			margin: -8px 0 5px;
+			font: 14px/24px $heading-font-family;
+			a{
+				color: $color3;
+				transition: all ease 0.3s;
+				&:hover{color: $color4;}
+			}
+		}
+		.cat{
+			color: $color7;
+			font-size: 12px;
+			transition: all ease 0.3s;
+			&:hover{color: $color4;}
+		}
+	}
+	&.nav-widget ul{
+		margin: 0;
+		padding: 0 0 2px;
+		font: 14px/18px $heading-font-family;
+		li{margin: 0 0 18px;}
+		a{
+			color: $color3;
+			transition: all ease 0.3s;
+			&:hover{color: $color4;}
+		}
+	}
+	&.tags-widget{
+		font-size: 14px;
+		line-height: 24px;
+		a{
+			color: $color2;
+			transition: all ease 0.3s;
+			&:hover{color: $color4;}
+		}
+		.tags{
+			display: block;
+			margin: 0 0 20px;
+		}
+	}
+}
+#back-top {
+	bottom: 0;
+	opacity: 0;
+	z-index: 9;
+	right: 20px;
+	width: 50px;
+	color: #fff;
+	height: 50px;
+	z-index: 9999;
+	cursor: pointer;
+	font-size: 25px;
+	position: fixed;
+	line-height: 47px;
+	text-align: center;
+	border-radius: 3px;
+	background: #252525;
+	transition: all .6s ease;
+	transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	-webkit-transition: all .6s ease;
+	-webkit-transform: translateY(40px);
+}
+#back-top.show {
+	opacity: 1;
+	transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-webkit-transform: translateY(-20px);
+}
+#back-top:hover {opacity: .9;}
+#preloader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  position: fixed;
+}
+.spinner {
+	top: 45%;
+	left: 48%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	vertical-align: top;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.spinner-round:before {
+	top: 0;
+	left: 0;
+	width: 50px;
+	content: " ";
+	height: 50px;
+	position: absolute;
+	border-radius: 50%;
+	vertical-align: top;
+	display: inline-block;
+	border-top: solid 4px $color2;
+	border-left: solid 4px $color2;
+	border-right: solid 4px $color2;
+	border-bottom: solid 4px $color2;
+}
+.spinner-round:after {
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	content: " ";
+	position: absolute;
+	border-radius: 50%;
+	vertical-align: top;
+	display: inline-block;
+	border-top: solid 4px $white;
+	border-left: solid 4px transparent;
+	border-right: solid 4px transparent;
+	border-bottom: solid 4px transparent;
+	animation: spinner-round-animate 1s ease-in-out infinite;
+}
+@keyframes spinner-round-animate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}

@@ -1,0 +1,30 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #f9f9f9;
+
+
+$black:				#000;
+$white:				#fff;
+$color1:			#f5f2f1;
+$color2:			#393939;
+$color3:			#595959;
+$color4:			#bcaaa4;
+$color5:			#b9b9b9;
+$color6:			#f9f9f9;
+$color7:			#999;
+
+//== Scaffolding
+$text-color:	$color3;
+$link-color:	#698cf0;
+$link-hover-decoration: none;
+$link-hover-color:	#bcaaa4;
+
+//== Typography
+$font-family-sans-serif:	"Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-family:	"Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base:	16px;
+$line-height-base:	1.714;
+
+
+//== Container sizes
+$container-lg:	1200px;
