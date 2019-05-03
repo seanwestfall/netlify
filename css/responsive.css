@@ -1,0 +1,338 @@
+@media (max-width: 1500px) {
+	.port-view .column {
+		padding: 74px 12px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.side-bar .logo {
+		top: 40px;
+	}
+
+	.side-bar .footer {
+		bottom: 5px;
+	}
+
+	.side-bar:after {
+		height: 82px;
+	}
+
+	.side-bar:before {
+		height: 70px;
+	}
+
+	.side-bar .social {
+		padding: 0 0 10px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.side-bar {
+		width: 260px;
+	}
+
+	.side-bar .logo {
+		left: 25px;
+	}
+
+	.side-bar #footer {
+		left: 25px;
+	}
+
+	.side-bar #nav > ul {
+		padding: 40px 10px 80px 25px;
+	}
+}
+
+@media (max-width: 992px) {
+	.mar-top-lg {
+		margin-top: 100px;
+	}
+
+	.pad-top-lg {
+		padding-top: 100px;
+	}
+
+	.mar-bottom-lg {
+		margin-bottom: 100px;
+	}
+
+	.pad-bottom-lg {
+		padding-bottom: 100px;
+	}
+
+	.port-view .column {
+		padding: 50px 12px;
+	}
+}
+
+@media (max-width: 767px) {
+	.visible-xs {
+		display: block !important;
+	}
+
+	#header .holder {
+		padding: 20px 0;
+	}
+
+	#header #nav {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 1;
+		width: 260px;
+		height: 100vh;
+		position: fixed;
+		background: #fff;
+		padding: 22px 10px;
+		overflow-y: visible;
+		visibility: visible;
+		margin-right: -260px;
+		-webkit-transition: all ease .3s;
+		transition: all ease .3s;
+		-webkit-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		transform: translateX(0px);
+		box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+	}
+
+	#header #nav > ul li {
+		display: block;
+	}
+
+	#header #nav .drop {
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		width: auto;
+		display: none;
+		position: static;
+		visibility: auto;
+		background: transparent;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	#header #nav .drop.add {
+		width: auto;
+	}
+
+	#header #nav .drop a {
+		color: #999;
+	}
+
+	#header #nav .drop a:hover {
+		color: #bcaaa4;
+	}
+
+	.nav-active .w1 {
+		margin-right: 260px;
+		margin-left: -260px;
+	}
+
+	.nav-active #header.sticky .holder {
+		margin-right: 260px;
+		margin-left: -260px;
+	}
+
+	.nav-active .side-bar {
+		margin-right: 0;
+	}
+
+	.nav-active2 .w1 {
+		margin-right: 260px;
+		margin-left: -260px;
+	}
+
+	.nav-active2 #header.sticky .holder {
+		margin-right: 260px;
+		margin-left: -260px;
+	}
+
+	.nav-active2 .menu-opener2 {
+		opacity: 1;
+	}
+
+	.nav-active2 #header #nav {
+		margin-right: 0;
+	}
+
+	.side-bar {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		position: fixed;
+		margin-right: -260px;
+		-webkit-transition: all ease .3s;
+		transition: all ease .3s;
+	}
+
+	.side-bar .logo {
+		top: 25px;
+	}
+
+	.side-bar #footer {
+		bottom: 0;
+	}
+
+	.side-bar #nav > ul {
+		padding: 70px 20px;
+	}
+
+	.side-bar:after {
+		height: 65px;
+	}
+
+	.side-bar:before {
+		height: 80px;
+	}
+
+	.side-bar.side-push {
+		width: 260px;
+		margin-right: -260px;
+	}
+
+	.main-banner {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.main-banner .heading {
+		font-size: 33px;
+		line-height: 40px;
+	}
+
+	.main-banner .bg {
+		margin: 0;
+	}
+
+	.grid-sizer {
+		width: 100%;
+	}
+
+	.item {
+		float: left;
+	}
+
+	.item.col2 {
+		width: 100%;
+	}
+
+	.item.col4 {
+		width: 100%;
+	}
+
+	.item.col3 {
+		width: 100%;
+	}
+
+	.item.col5 {
+		width: 100%;
+	}
+
+	.item.col2half {
+		width: 100%;
+	}
+
+	.item .portfolio-box {
+		margin: 0 12px 24px;
+	}
+
+	.item.add .portfolio-box {
+		margin: 0 24px 24px;
+	}
+
+	.item.add2 .portfolio-box {
+		margin: 0;
+	}
+
+	.portfolio-box.large .heading {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	.portfolio-box.style3 .over {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.portfolio-box.style3 .over .txt,
+	.portfolio-box.style3 .over .heading {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	.port-view .column.active,
+	.port-view .column:hover,
+	.port-view .column {
+		padding: 0;
+		float: none;
+		width: 100%;
+	}
+
+	.portfolio-detail {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.portfolio-detail .text-box {
+		padding: 100px 0 40px;
+	}
+
+	.portfolio-detail .heading {
+		font-size: 26px;
+		margin: 0 0 30px;
+		line-height: 38px;
+	}
+
+	.post {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.post .text {
+		padding: 40px 1.2% 0;
+	}
+
+	.post .heading {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	.post.detail {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.post.detail .text {
+		padding: 100px 0 0;
+	}
+
+	.post.detail .heading {
+		font-size: 26px;
+		margin: 0 0 30px;
+		line-height: 38px;
+	}
+
+	.team-section .col3 {
+		width: 100%;
+	}
+
+	.page-header {
+		padding: 170px 0 120px;
+	}
+
+	.page-header.add {
+		padding: 60px 0 0;
+	}
+
+	.page-header .heading {
+		font-size: 36px;
+		margin: 0 0 30px;
+		line-height: 48px;
+	}
+}
+
