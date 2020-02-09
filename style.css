@@ -1212,6 +1212,12 @@ a {
 	font: 700 64px/70px "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.main-banner .subheading {
+	color: #393939;
+	margin: 136px 0 0;
+	font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .main-banner p {
 	margin: 0;
 	max-width: 760px;
@@ -1662,7 +1668,7 @@ a {
 
 #footer {
 	color: #999;
-	padding: 41px 0;
+	padding: 0 0;
 }
 
 #footer p {
@@ -2513,4 +2519,4 @@ a {
 		transform: rotate(360deg);
 	}
 }
-
+

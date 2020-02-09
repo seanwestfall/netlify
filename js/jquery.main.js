@@ -71,7 +71,7 @@ $(document).ready(function() {
 		
 		var jQuerybackToTop = jQuery("#back-top");
 		jQuery(window).on('scroll', function() {
-			if (jQuery(this).scrollTop() > 100) {
+			if (jQuery(this).scrollTop() > 10) {
 				jQuerybackToTop.addClass('show');
 			} else {
 				jQuerybackToTop.removeClass('show');
