@@ -1,0 +1,87 @@
+==================================================================
+https://keybase.io/seanwestfall
+--------------------------------------------------------------------
+
+I hereby claim:
+
+I am an admin of https://fieldsofgoldfi.sh
+I am seanwestfall (https://keybase.io/seanwestfall) on keybase.
+I have a public key with fingerprint 3818 A12E 0F1A C49D F829  0107 28C4 39B2 02EE AB11
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101d4fc2568908a7c6bc24fb305df88653ff0df90625dffe41877b182c98fea61620a",
+      "fingerprint": "3818a12e0f1ac49df829010728c439b202eeab11",
+      "host": "keybase.io",
+      "key_id": "28c439b202eeab11",
+      "kid": "0101d4fc2568908a7c6bc24fb305df88653ff0df90625dffe41877b182c98fea61620a",
+      "uid": "feaf40f3b8bdacd1ce43996a69e93419",
+      "username": "seanwestfall"
+    },
+    "merkle_root": {
+      "ctime": 1685387530,
+      "hash_meta": "ea646c6879654b7078d84ffb5797473c04de5683d2650187f1cc1b17fadf4c6c",
+      "seqno": 24508455
+    },
+    "revoke": {
+      "sig_ids": [
+        "587119a2c142cbfc77ed176dccf2bd53f3ef1c87aab49e8acd59c9e4d4f596f80f"
+      ]
+    },
+    "service": {
+      "hostname": "fieldsofgoldfi.sh",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1685387574,
+  "expire_in": 157680000,
+  "prev": "56192f269f58285518a8ebddc78ca69cf3b5054c9ad8c347b63a36a8703cbe72",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMPgAnicrVN7UBVVHL4KFl7SLEcadbRpc8SUdJ9nz16nMQXUxBwnJTWU29nzgOVe
+7uLuBTMEIRsfg6TjAKWjaFrjmOKILxRERsfRTEl7TSCaAZWOrx6az8jOMjbNNP3Z
+/rOzv/1+3/f9vt85x/rE+Pw9Rhwzdve8sf2pHqeOluT7SPQeKBRMmywUAoVCiHa/
+aJhQNxoMWUQICKIkSkRlWNYANESIdAxMLKvMVESNMAiBpjAmEmaIQOYFRlUJ6rop
+QRkbkFEEJCCLSEgSmBXJok6eY0WinFaBEkSSTEUmIawanEk2uJQuQ6wqhimLMqXI
+lCTemG27Xgc3ZyKXjrZsXuMfwW57/4H/n33nd9PxClNFppjQJAgTCVMuawAEDGoo
+qmR4QJc6EZRLOdqlKLKAZ8hQOCwUJQm51AmFadCx7agXMI5aHkwCUFOgrikiHxK5
+2cFcGkW8m4urAAOoG0BTTV3UIYEqY6amG7qqK1hUCeVTKUQGmshdMwljyZR0hghT
+McDci0vnR2whIKuaCFVN4xYcWmCHqKfuWlk8O1cIZAga1CXJQDKWVBmbDOs6JZIO
+CMZMNglPSKGcHOoImapBIR9cM7BBVR6sZgAGRSbMK/LUnAILd5N7y3oUArP4QXJt
+lmWHCbNGu9ncV55jR21sh/nv7Gg0zw146UQX5nn4BdQMPmIKmlaE8PPCOwqo41p2
+hKfFkf8KTleTBPpWnuXQoOUhNB1AkT+eDi3glBqQDJnJwGAalKGm8TMHqUkI1iHm
+q8N8n5qoqdhABGJF1U2gIAUgqIsKNqku/5OkBLhPlOXt1sqKoGi+Q4Wio0fmxvp6
++H2P9erpXSSfv3e/v69XIOnJrsG5n0/wd2y9MPJyStfM99eSxsOnp+xKKBWzGq83
+Tevfug/tk0/VzH/wXeYAVH1gFdlfV3521hUpYV7Fy6+0Th5eu7pwefLUWdPrTs7N
+vtjQtXte0tDxm5Nj1+Z2pE0qb0jZoo152r+xT9KzOVJl73ojfd3D3huyl/rP7D+d
+WnGgeEd1TctDc82gIebO5LpR5W2JP5yoOHj5UmdR7C77xynPmeNWLB5wvJKemVBb
+X2v0n/1unPj91diqwqVzqlbdP3G3fYhzqTR2cGLKh+OHT9297rWqlM7qSfqN+Ilk
++Rf9hh+q7jxkOQ2ZzYMzS898m/F1Grq2aeDK+vDOYQ9+2Zoza1r7n+OWDUo/3O9K
+S2LlXtHttTku8+1a+I3T8cFPvQIP7lQWr57+cwpouqlt1a6mTR475vfQtXOpd9Zv
+29OYs6xsUd0S/4TjVTkb7KaGorQZmcklfX9rO7T01uLbN8Hix0ur2i/HT5+TejBu
+U8PdYZ9ZJQFS0RJOj1nwRHBsa9UL57+6tSZm2/aSaXs6WjJ8e399Z+P4V59JXq40
+34+f39ZV/2a9GI20joIVxaEj6XEjr9S03AgtOvtJ/uzrM/aR+JtlO9arr7fFfFp8
+7/kte5bNvFg5Yl3fzvf6rHxY3pzauPHCySVNvi3Nc6tf3Os7l3i7rWvJl+0VORmD
+7mz7qOHgwPsJNXF+ECx7aUXC2KF/zM7I+Djwxvm/AB+GC8s=
+=4m25
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/seanwestfall
+
+==================================================================
