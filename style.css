@@ -1218,6 +1218,12 @@ a {
 	font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.main-banner .subheading2 {
+	color: #393939;
+	margin: 20px 0 0;
+	font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .main-banner p {
 	margin: 0;
 	max-width: 760px;
